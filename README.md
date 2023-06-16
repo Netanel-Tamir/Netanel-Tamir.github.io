@@ -436,8 +436,8 @@ In publications, the author entry for yourself is identified by string array `sc
 
 ```yaml
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Tamir]
+  first_name: [Netanel, N.]
 ```
 
 If the entry matches one form of the last names and the first names, it will be underlined.
@@ -463,6 +463,10 @@ The co-author data format in `_data/coauthors.yml` is as follows,
 
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+"Fu":
+  - firstname: ["Stephanie", "S."]
+    url: https://stephanie-fu.github.io/
 ```
 
 If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.

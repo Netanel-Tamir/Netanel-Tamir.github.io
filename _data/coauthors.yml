@@ -32,3 +32,27 @@
 "Planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"Fu":
+  - firstname: ["Stephanie", "S."]
+    url: https://stephanie-fu.github.io/
+
+"Sundaram":
+  - firstname: ["Shobhita", "S."]
+    url: https://ssundaram21.github.io/
+
+"Chai":
+  - firstname: ["Lucy", "L."]
+    url: https://people.csail.mit.edu/lrchai/
+
+"Zhang":
+  - firstname: ["Richard", "R."]
+    url: http://richzhang.github.io/
+
+"Dekel":
+  - firstname: ["Tali", "T."]
+    url: https://www.weizmann.ac.il/math/dekel/home
+
+"Isola":
+  - firstname: ["Phillip", "P."]
+    url: http://web.mit.edu/phillipi/
