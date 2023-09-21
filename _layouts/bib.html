@@ -124,10 +124,17 @@
         {%- if entry.year -%}
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
+        {%- if entry.award -%}
+          {%- capture entryaward -%}{{ " " }}{{entry.award}}{%- endcapture -%}
+        {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
         {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-        <div class="periodical">
+        {%- capture award -%}{{ entryaward }}{%- if entryaward != "" -%}, {%- endif -%}{{ entryaward}}{%- endcapture -%}
+        <div class="periodical" style="display: inline;">
           {{ periodical | strip }}
+        </div>
+        <div style="display: inline">
+          <em style="color:#ff0000">{{ entry.award | strip }}</em>
         </div>
         <div class="periodical">
           {{ entry.note | strip }}
