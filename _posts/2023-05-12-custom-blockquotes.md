@@ -1,11 +1,13 @@
 ---
 layout: post
-title: a post with custom blockquotes
-date: 2023-05-12 15:53:00-0400
-description: an example of a blog post with custom blockquotes
-categories: sample-posts blockquotes
-giscus_comments: true
-related_posts: true
+title: 'Voxel51 Computer Vision Meetup: '
+talk: 'DreamSim: Learning New Dimensions of Human Visual Similarity using Synthetic Data'
+date: 2023-07-20 15:53:00-0400
+link: https://voxel51.com/blog/recapping-the-computer-vision-meetup-july-20-2023/
+#description: an example of a blog post with custom blockquotes
+#categories: sample-posts blockquotes
+#giscus_comments: true
+#related_posts: true
 ---
 This post shows how to add custom styles for blockquotes. Based on [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook) implementation.
 

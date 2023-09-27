@@ -46,17 +46,18 @@ layout: default
             {%- include news.html limit=true %}
           {%- endif %}
 
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2> -->
             <h2 name="publications_tab" id="publications_tab">Publications</h2>
             {%- include selected_papers.html %}
+          {%- endif %}
+
+          <!-- Latest posts -->
+            {% if page.latest_posts -%}
+            <!-- <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Talks</a></h2> -->
+            <h2 name="talks_tab" id="talks_tab">Talks</h2>
+            {%- include latest_posts.html %}
           {%- endif %}
 
           <!-- Social -->
