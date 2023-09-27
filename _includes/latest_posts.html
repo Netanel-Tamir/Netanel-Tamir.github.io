@@ -8,11 +8,11 @@
               {% if site.latest_posts.limit %}
               {% assign latest_posts_limit = site.latest_posts.limit %}
               {% else %}
-              {% assign latest_posts_limit = latest_posts_size %}
+              {% assign latest_posts_limit = latest_posts_size | minus: 1%}
               {% endif %}
               {% for item in latest_posts limit: latest_posts_limit %}
                 <tr>
-                  <th scope="row" style="width:100px">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <th scope="row" style="width:110px">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
                     <!-- <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a> -->
                     <a class="news-title" href="{{item.link}}"><i>{{ item.title }}</i>{{item.talk}}</a>

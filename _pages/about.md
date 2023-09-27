@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 I'm a computer science & mathematics graduate student at the Weizmann Institute of Science, advised by <a href="https://www.weizmann.ac.il/math/dekel/home">Dr. Tali Dekel</a>.
 
-I did my BSc in computer science at Bar-Ilan University (Summa Cum Laude). Before that, I did my military service in the Israeli Artillery Corps.
+I completed my BSc in computer science at Bar-Ilan University (Summa Cum Laude). Before that, I did my military service in the Israeli Artillery Corps.
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
 
