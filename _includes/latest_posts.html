@@ -11,6 +11,7 @@
               {% assign latest_posts_limit = latest_posts_size | minus: 1%}
               {% endif %}
               {% for item in latest_posts limit: latest_posts_limit %}
+              {% if item.link %}
                 <tr>
                   <th scope="row" style="width:110px">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
@@ -18,6 +19,15 @@
                     <a class="news-title" href="{{item.link}}"><i>{{ item.title }}</i>{{item.talk}}</a>
                   </td>
                 </tr>
+              {% else %}
+              <tr>
+                <th scope="row" style="width:110px">{{ item.date | date: "%b %-d, %Y" }}</th>
+                <td style="color: var(--global-theme-color)">
+                  <!-- <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a> -->
+                  <i>{{ item.title }}</i>{{item.talk}}
+                </td>
+              </tr>
+              {% endif %}
               {%- endfor %}
               </table>
             </div>
