@@ -56,3 +56,15 @@
 "Isola":
   - firstname: ["Phillip", "P."]
     url: http://web.mit.edu/phillipi/
+
+"Muttenthaler":
+  - firstname: ["Lukas", "L."]
+    url: https://lukasmut.github.io/
+
+"Kornblith":
+  - firstname: ["Simon", "S."]
+    url: https://simonster.com/
+
+"Darrell":
+  - firstname: ["Trevor", "T."]
+    url: https://people.eecs.berkeley.edu/~trevor/
