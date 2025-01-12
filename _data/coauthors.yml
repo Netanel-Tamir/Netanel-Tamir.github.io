@@ -68,3 +68,23 @@
 "Darrell":
   - firstname: ["Trevor", "T."]
     url: https://people.eecs.berkeley.edu/~trevor/
+  
+"Amir":
+  - firstname: ["Shir", "S."]
+    url: https://www.linkedin.com/in/shiramir/
+
+"Itzhaky":
+  - firstname: ["Ranel", "R."]
+    url: https://www.linkedin.com/in/ranel-itzhaky-847070254/
+
+"Atia":
+  - firstname: ["Noam", "N."]
+    url: https://www.linkedin.com/in/noam-atia/
+
+"Sokolovsky":
+  - firstname: ["Ron", "R."]
+    url: https://www.linkedin.com/in/ronus/
+
+"Farber":
+  - firstname: ["Miriam", "M."]
+    url: https://www.linkedin.com/in/miriam-farber-1a07bb145/

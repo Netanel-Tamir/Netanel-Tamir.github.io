@@ -22,10 +22,22 @@
   selected={false}
 }
 
+@article{tamir2024what,
+  title={When Does Perceptual Alignment Benefit Vision Representations?},
+  author={Netanel Y. Tamir* and Shir Amir* and Ranel Itzhaky and Noam Atia and Shobhita Sundaram and Stephanie Fu and Ron Sokolovsky and Phillip Isola and Tali Dekel and Richard Zhang and Miriam Farber},
+  abstract={With rapid advancements in virtual reality (VR) headsets, effectively measuring stereoscopic quality of experience (SQoE) has become essential for delivering immersive and comfortable 3D experiences. However, most existing stereo metrics focus on isolated aspects of the viewing experience such as visual discomfort or image quality, and have traditionally faced data limitations. To address these gaps, we present SCOPE (Stereoscopic COntent Preference Evaluation), a new dataset comprised of real and synthetic stereoscopic images featuring a wide range of common perceptual distortions and artifacts. The dataset is labeled with preference annotations collected on a VR headset, with our findings indicating a notable degree of consistency in user preferences across different headsets. Additionally, we present iSQoE, a new model for stereo quality of experience assessment trained on our dataset. We show that iSQoE aligns better with human preferences than existing methods when comparing mono-to-stereo conversion methods.},
+  journal={arXiv},
+  year={2024},
+  website={https://isqoe.github.io/},
+  arxiv={2412.21127},
+  code={},
+  preview={isqoe.png},
+  selected={true}
+}
 
 @article{sundaram2024when,
   title={When Does Perceptual Alignment Benefit Vision Representations?},
-  author={Shobhita Sundaram* and Stephanie Fu* and Lukas Muttenthaler and Netanel Tamir and Lucy Chai and Simon Kornblith and Trevor Darrell and Phillip Isola},
+  author={Shobhita Sundaram* and Stephanie Fu* and Lukas Muttenthaler and Netanel Y. Tamir and Lucy Chai and Simon Kornblith and Trevor Darrell and Phillip Isola},
   abstract={Humans judge perceptual similarity according to diverse visual attributes, including scene layout, subject location, and camera pose. Existing vision models understand a wide range of semantic abstractions but improperly weigh these attributes and thus make inferences misaligned with human perception. While vision representations have previously benefited from alignment in contexts like image generation, the utility of perceptually aligned representations in more general-purpose settings remains unclear. Here, we investigate how aligning vision model representations to human perceptual judgments impacts their usability across diverse computer vision tasks. We finetune state-of-the-art models on human similarity judgments for image triplets and evaluate them across standard vision benchmarks. We find that aligning models to perceptual judgments yields representations that improve upon the original backbones across many downstream tasks, including counting, segmentation, depth estimation, instance retrieval, and retrieval-augmented generation. In addition, we find that performance is widely preserved on other tasks, including specialized out-of-distribution domains such as in medical imaging and 3D environment frames. Our results suggest that injecting an inductive bias about human perceptual knowledge into vision models can contribute to better representations.},
   journal={Conference on Neural Information Processing Systems (NeurIPS)},
   year={2024},
@@ -38,7 +50,7 @@
 
 @article{fu2023learning,
   title={DreamSim: Learning New Dimensions of Human Visual Similarity using Synthetic Data},
-  author={Stephanie Fu* and Netanel Tamir* and Shobhita Sundaram* and Lucy Chai and Richard Zhang and Tali Dekel and Phillip Isola},
+  author={Stephanie Fu* and Netanel Y. Tamir* and Shobhita Sundaram* and Lucy Chai and Richard Zhang and Tali Dekel and Phillip Isola},
   abstract={Current perceptual similarity metrics operate at the level of pixels and patches. These metrics compare images in terms of their low-level colors and textures, but fail to capture mid-level similarities, and differences, in image layout, object poses, and semantic content. In this paper, we develop a perceptual metric that assesses images holistically. Our first step is to collect a new dataset of human similarity judgments over image pairs that are alike in diverse ways. Critical to this dataset is that judgments are nearly automatic and shared by all observers. To achieve this we use recent text-to-image models to create synthetic pairs that are perturbed along various dimensions. We observe that popular perceptual metrics fall short of explaining our new data, and we introduce a new metric, DreamSim, tuned to better align with human perception. We analyze how our metric is affected by different visual attributes, and find that it focuses heavily on foreground objects and semantic content while also being sensitive to color and layout. Notably, despite being trained on synthetic data, our metric generalizes to real images, giving strong results on retrieval and reconstruction tasks. Furthermore, our metric outperforms both prior learned metrics and recent large vision models on these tasks.},
   journal={Conference on Neural Information Processing Systems (NeurIPS)},
   year={2023},
