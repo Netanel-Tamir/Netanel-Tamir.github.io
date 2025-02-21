@@ -23,7 +23,7 @@ I’m currently a research intern at Apple and have recently graduated with an M
 
 Before that, I completed my BSc in computer science at Bar-Ilan University (Summa Cum Laude).
 
-I'm also a first sergeant in the Israeli Artillery Corps reserves. <img src="assets/img/red-black.png" style="
+I'm also a master sergeant in the Israeli Artillery Corps reserves. <img src="assets/img/red-black.png" style="
     width: 30px;
     margin-top: -3px;
 ">
