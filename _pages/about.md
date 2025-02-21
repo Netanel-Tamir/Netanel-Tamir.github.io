@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I’m currently a research intern at Apple and have recently graduated with an MSc in computer science & mathematics from the Weizmann Institute of Science, advised by <a href="https://www.weizmann.ac.il/math/dekel/home">Dr. Tali Dekel</a>. I was also fortunate enough to work with <a href="https://richzhang.github.io/">Dr. Richard Zhang</a> and <a href="https://web.mit.edu/phillipi/">Prof. Phillip Isola</a>.
+I recently graduated with an MSc in computer science & mathematics from the Weizmann Institute of Science, advised by <a href="https://www.weizmann.ac.il/math/dekel/home">Dr. Tali Dekel</a>. I was also fortunate enough to work with <a href="https://richzhang.github.io/">Dr. Richard Zhang</a> and <a href="https://web.mit.edu/phillipi/">Prof. Phillip Isola</a>. During my studies, I also completed an internship at Apple.
 
 Before that, I completed my BSc in computer science at Bar-Ilan University (Summa Cum Laude).
 
