@@ -31,6 +31,7 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-award-color: #9b761d;
 }
 :root .fa-sun {
   display: none;
@@ -73,6 +74,7 @@ html[data-theme=dark] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-award-color: #fcc200;
 }
 html[data-theme=dark] .fa-sun {
   padding-left: 10px;
