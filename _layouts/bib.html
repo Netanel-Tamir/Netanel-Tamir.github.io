@@ -29,9 +29,9 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8" style="flex: 0 0 50%;max-width: 50%;">
         <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+        <div class="title" style="font-size: large;margin-bottom: 1px;">{{entry.title}}</div>
         <!-- Author -->
-        <div class="author">
+        <div class="author" style="margin-bottom: 5px;">
         {% assign author_array_size = entry.author_array | size %}
 
         {% assign author_array_limit = author_array_size %}
@@ -110,7 +110,7 @@
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+          {%- capture entrytype -%}{{entry.journal}}{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
@@ -128,16 +128,17 @@
           {%- capture entryaward -%}{{ " " }}{{entry.award}}{%- endcapture -%}
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-        {%- capture award -%}{{ entryaward }}{%- if entryaward != "" -%}, {%- endif -%}{{ entryaward}}{%- endcapture -%}
-        <div class="periodical" style="display: inline;">
-          {{ periodical | strip }}
-        </div>
-        <div style="display: inline">
-          <em style="color:#ff0000">{{ entry.award | strip }}</em>
-        </div>
-        <div class="periodical">
-          {{ entry.note | strip }}
+        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}{%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        {%- capture award -%}{{ entryaward }}{%- if entryaward != "" -%} {%- endif -%}{{ entryaward}}{%- endcapture -%}
+
+        <div style="display: inline;">
+          {% if entry.award %}
+            <span class="periodical" style="font-weight: bolder; font-style: normal; color: var(--global-award-color);">{{ periodical | strip }}</span>
+            <em style="font-weight: bolder; font-style: normal; color: var(--global-award-color);"> - {{ entry.award | strip }}</em>
+          {% else %}
+            <span style="font-weight: bolder; font-style: normal;" class="periodical">{{ periodical | strip }}</span>
+          {% endif %}
+          <span class="periodical">{{ entry.note | strip }}</span>
         </div>
 
           <!-- Links/Buttons -->
