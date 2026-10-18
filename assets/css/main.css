@@ -577,6 +577,10 @@ footer.sticky-bottom {
 .publications ol.bibliography li .preview {
   width: 100%;
 }
+.publications ol.bibliography li img.preview {
+  aspect-ratio: 1178 / 656;
+  object-fit: fill;
+}
 .publications ol.bibliography li .abbr {
   height: 2rem;
   margin-bottom: 0.5rem;

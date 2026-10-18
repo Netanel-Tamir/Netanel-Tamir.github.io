@@ -168,6 +168,32 @@
           <div class="publications">
             <ol class="bibliography">
 <li>
+      <div class="row">
+        <div class="col-sm-2 preview" style="flex: 0 0 50%;max-width: 50%;">
+          <figure>
+            <img src="/assets/img/publication_preview/stuck-on-shuffle.jpg" class="preview z-depth-1 rounded" alt="Stuck on Shuffle: SABER attribute–object binding benchmark and text-only finetuning overview">
+          </figure>
+        </div>
+        <div id="stuckonshuffle" class="col-sm-8" style="flex: 0 0 50%;max-width: 50%;">
+          <div class="title" style="font-size: large;margin-bottom: 1px;">Stuck on Shuffle: On Attribute–Object Binding in Vision–Language Models</div>
+          <div class="author" style="margin-bottom: 5px;">Netanel Y. Tamir, <a href="https://www.linkedin.com/in/michael-green-0631b051/" rel="external nofollow noopener" target="_blank">Michael Green</a>, <a href="https://www.linkedin.com/in/issar-tzachor/" rel="external nofollow noopener" target="_blank">Issar Tzachor</a>, <a href="https://www.linkedin.com/in/or-shimshi-6a9a34/" rel="external nofollow noopener" target="_blank">Or Shimshi</a>, <a href="https://dvirsamuel.github.io/" rel="external nofollow noopener" target="_blank">Dvir Samuel</a>, <a href="https://orpatashnik.github.io/" rel="external nofollow noopener" target="_blank">Or Patashnik</a>, and <a href="https://www.benarirami.com/" rel="external nofollow noopener" target="_blank">Rami Ben-Ari</a></div>
+          <div style="display: inline;">
+            <span style="font-weight: bolder; font-style: normal;" class="periodical">arXiv</span>
+          </div>
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://github.com/Netanel-Tamir/Stuck-On-Shuffle" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://stuck-on-shuffle.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          <div class="abstract hidden">
+            <p>Retrieval is a fundamental task in multimodal systems: given an image or text query, the goal is to find the most relevant images or texts in a collection, often using a shared embedding space. Reliable retrieval requires these embeddings to capture not only which concepts are present, but also how they are composed. One key compositional challenge is attribute–object binding: encoding which attributes belong to which objects. Existing benchmarks provide a limited view of this capability, typically covering a subset of modality pairings, simple two-object swaps, or small attribute sets. Consequently, it remains unclear how robustly current models preserve attribute–object bindings across different modality pairings and more complex settings.</p>
+        <p>We therefore introduce <strong>SABER</strong>, a controlled benchmark for evaluating attribute–object binding across all four image and text modality pairings, spanning diverse attribute types and scenes with up to ten objects. Evaluating models on SABER reveals substantial binding failures in both CLIP-style dual encoders and recent MLLM-based embedders. These findings motivate us to ask how binding can be improved efficiently. While multimodal supervision may be effective, collecting suitable images is difficult and costly. Text, on the other hand, is well suited to binding supervision: it is cheap to generate, supports a broader range of attributes and enables precisely controlled hard negatives. Recent work also shows that capabilities learned through text-only supervision can transfer to visual modalities in MLLMs.</p>
+        <p>We thus finetune an MLLM-based embedder exclusively on synthetic attribute-binding text. Despite the absence of image supervision, the gains transfer to cross-modal and image–image retrieval while preserving general multimodal embedding performance. Our model achieves SOTA results on SABER while also improving on negation and instance-retrieval benchmarks, demonstrating broader benefits of our binding-focused supervision.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 preview" style="flex: 0 0 50%;max-width: 50%;">
